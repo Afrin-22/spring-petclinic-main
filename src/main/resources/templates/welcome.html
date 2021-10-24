@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+  <body>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 th:text="#{welcome}" style="color: mediumvioletred; font-size: 60px; font-style: italic; font-weight: bold; font-stretch: extra-expanded; font-family: 'Script MT Bold'">Welcome to Pet Clinic</h2>
+      </div>
+        <div class="col-md-12">
+          <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>
+        </div>
+      <div class="col-md-12">
+        <h2 th:text="#{clinic}" style="color: mediumvioletred; font-size: 60px; font-style: italic; font-weight: bold; font-stretch: extra-expanded; font-family: 'Courier New'"></h2>
+      </div>
+    </div>
+
+  </body>
+
+</html>
